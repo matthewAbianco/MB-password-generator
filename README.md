@@ -1,4 +1,4 @@
-# HTML CSS Git Code Refactor Homework Week 3
+# password generator 
 
 This is my third homework assignment. I created  a Password Generator that works within a specific and selectable serires of criteria. 
 
@@ -11,7 +11,7 @@ This is my third homework assignment. I created  a Password Generator that works
 3. Codecademy
 4. Gitlab
 5. Github
-
+6. HTML, CSS, JavaScript
 ---
 
 ### Contact Info
