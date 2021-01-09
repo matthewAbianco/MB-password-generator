@@ -1,98 +1,93 @@
+  
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Matthew Bianco Password Generator</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="./assets/pwGen.css" />
   </head>
 
   <body>
 
-<!-- Header Section-->
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
-<!--Header Section End-->
 
-<!--Password Text Area Display-->
+<!-- CARD HEADER -->
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+<!-- CARD HEADER END -->
+
+<!-- CARD BODY -->
         <div class="card-body">
           <textarea
             readonly
-            id="password"
+            id="result"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
         </div>
-<!--Password Text Area Display End-->
+<!-- CARD BODY END --> 
 
 
-<!--Generate Password Button-->
         <div class="card-footer">
-          <button id="button" class="button">Generate Password</button>
-          <div class="window" div="window">
-<!--Generate Password Button End-->
-
-<!--Password Generator Pop-Out Window Features-->
-            <div class="box-top">
-         <div class="title">Password Generator Settings</div>
-            <span id="close-button" class="close-button">&times;</span>
-            </div>
-
-          <!-- Password Generator Features-->
-          <div class="features-window">
-            <form>
-              <div class="setting">
-              <label>Password Length</label>
-                <input type="number" id="length" min="8" max="128" />
-              </div>
-              <div class="setting">
-                <label>Use Uppercase Letters</label>
-                <input type="checkbox" id="uppercase" checked/>
-              </div>
-              <div class="setting">
-                <label>Use Lowercase Letters</label>
-                <input type="checkbox" id="lowercase" checked/>
-              </div>
-              <div class="setting">
-                <label>Use Numbers</label>
-                <input type="checkbox" id="numbers" checked/>
-              </div>
-              <div class="setting">
-                <label>Use Special Symbols</label>
-                <input type="checkbox" id="symbols" checked/>
-              </div>
-              <div class="setting">
-                <button id="generate">Generate</button>
-              </div>
-            </form>
-            
-          </div>
-        </div>
- 
-
-<!--Generate Password Button and Window End-->
-<!--Password Generator Pop-Out Window Features End-->
-
+          <button id="generateButton" class="btn">Select Password Options</button>
         </div>
 
 
+<!-- PASSWROD BOX -->
+ <div id="passwordBox" class="password-box">
 
+<!-- PASSWROD BOX CONTENT -->
+<div class="pw-features">
+<span class="close">&times;</span>
 
+<div class="container">
+  <h2>Password Generator</h2>
 
+<!-- SETTINGS  -->
+	</div>
+	<div class="settings">
+		<div class="setting">
+			<label>Password length</label>
+			<input type="number" id="length" min='8' max='128' value='8' />
+		</div>
+		<div class="setting">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label>Include symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+  </div>
+<!-- SETTINGS END -->  
 
+	<button class=" btn-large" id="generate">
+		Generate password
+	</button>
+</div>
+<!-- PASSWORD BOX END -->
+</div>
+<!-- PASSWORD CONTENT END -->
+</div> 
 
-<!--Generate Password Button End-->
       </div>
     </div>
-
     <script src="./assets/pwGen.js"></script>
-
   </body>
 </html>
