@@ -4,6 +4,8 @@ This is my third homework assignment. I created  a Password Generator that works
 
 ---
 
+https://matthewabianco.github.io/MB-password-generator.github.io/
+
 ## Resources used
 
 1. Youtube
