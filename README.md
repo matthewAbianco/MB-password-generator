@@ -3,7 +3,7 @@
 This is my third homework assignment. I created  a Password Generator that works within a specific and selectable serires of criteria. 
 
 ---
-
+Deployed password generator
 https://matthewabianco.github.io/MB-password-generator.github.io/
 
 ## Resources used
