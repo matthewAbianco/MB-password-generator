@@ -49,7 +49,7 @@ const password = [];
   
   }
   
-  if (lengthEl.value <= 8 || lengthEl.value >= 128) {
+  if (lengthEl.value < 8 || lengthEl.value > 128) {
     window.alert(" your password must be between 8 - 128 characters");
     lengthEl.value = 8
     generateEl();
