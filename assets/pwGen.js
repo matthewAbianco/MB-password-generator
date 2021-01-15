@@ -5,7 +5,7 @@ const lowercaseEl = document.getElementById('lowercase');
 const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
-var resultEl = document.getElementById("result")
+
 
 // THIS REFERENCES THE CHARACTER CODES OF NUMBER, SYMBOL, UPPERCASE AND LOWERCASE 
 const number =[48, 57];
@@ -22,7 +22,10 @@ generateEl.addEventListener('click', () => {
 	const hasSymbol = symbolsEl.checked;
 
 
+// EMPTY ARRAY TAKING THE "CHECKED" VALUES OF UPPER, LOWER, NUMBER AND SYMBOL TO THEN BE RANDOMLY SELECTED LATER
 const randomSelector = [];
+
+// EMPTY ARRAY THAT WILL HOLD THE PASSWORD AFTER THE CRITERIA HAVE BEEN CHOSEN AND HAVE GONE THROUGH TTHE RNG "FOR LOOP"
 const password = [];
 
 
@@ -46,9 +49,10 @@ const password = [];
     for(let i=lower[0]; i<= lower[1]; i++){
       randomSelector.unshift(i);
     }
-  
   }
   
+
+// THIS WILL CHECK THE PASSWORD LENGTH AND ENSURE IT ONLY DISPLAYS WITHIN THE VALUE MIN/MAX PARAMATERS
   if (lengthEl.value < 8 || lengthEl.value > 128) {
     window.alert(" your password must be between 8 - 128 characters");
     lengthEl.value = 8
