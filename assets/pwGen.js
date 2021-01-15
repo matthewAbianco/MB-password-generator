@@ -5,6 +5,7 @@ const lowercaseEl = document.getElementById('lowercase');
 const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
+var resultEl = document.getElementById("result")
 
 // THIS REFERENCES THE CHARACTER CODES OF NUMBER, SYMBOL, UPPERCASE AND LOWERCASE 
 const number =[48, 57];
@@ -45,8 +46,14 @@ const password = [];
     for(let i=lower[0]; i<= lower[1]; i++){
       randomSelector.unshift(i);
     }
+  
   }
   
+  if (lengthEl.value <= 8 || lengthEl.value >= 128) {
+    window.alert(" your password must be between 8 - 128 characters");
+    lengthEl.value = 8
+    generateEl();
+  }
 // THIS WILL GRAB THE PASSWORD LENGTH VALUE AND 
   for(let i = 0; i< length; i++){
     password.unshift(String.fromCharCode(randomSelector[Math.floor(Math.random()*randomSelector.length)])
